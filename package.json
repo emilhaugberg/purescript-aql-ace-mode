@@ -1,0 +1,30 @@
+{
+  "name": "try-purescript-ace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "pulp build && webpack && webpack-dev-server --hot --inline --content-base='dist'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilhaugberg/try-purescript-ace.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilhaugberg/try-purescript-ace/issues"
+  },
+  "homepage": "https://github.com/emilhaugberg/try-purescript-ace#readme",
+  "devDependencies": {
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "dependencies": {
+    "ace-builds": "^1.4.0"
+  }
+}
