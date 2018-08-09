@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HTML</title>
+    <style>
+        #editor {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+    </style>
+</head>
+<body>
+  <div id="editor">// Example
+schema S = literal : Ty {
+  entities
+       Person
+       Company
+       CompanyPerson
+      foreign_keys
+        persons_id  : CompanyPerson -> Person
+        companies_id   : CompanyPerson -> Company
+      attributes
+        firstname lastname      : Person -> String
+        name            : Company -> String
+  }
+  </div>
+  <script src="ace/ace.js"></script>
+
+  <script src="bundle.js"></script>
+</body>
+</html>
