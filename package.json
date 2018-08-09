@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "start": "pulp build && webpack && webpack-dev-server --hot --inline --content-base='dist'"
+    "start": "export PATH=node_modules/.bin:$PATH && node_modules/.bin/pulp build && node_modules/.bin/webpack && node_modules/.bin/webpack-dev-server --hot --inline --content-base='dist'"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "webpack-dev-server": "^3.1.5"
   },
   "dependencies": {
-    "ace-builds": "^1.4.0"
+    "pulp": "^12.3.0",
+    "purescript": "^0.12.0"
   }
 }
