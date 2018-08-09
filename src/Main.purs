@@ -1,16 +1,17 @@
 module Main where
 
-import Ace as Ace
-import Ace.Editor
 import Ace.EditSession
+import Ace.Editor
 import Prelude
+
+import Ace as Ace
 import Effect (Effect)
 import Effect.Console (log)
 
 main :: Effect Unit
 main = void $ do
   editor  <- Ace.edit "editor" Ace.ace
-  _       <- setTheme "ace/theme/chrome" editor
+  _       <- setTheme "ace/theme/monokai" editor
   session <- getSession editor
 
-  setMode "ace/mode/javascript" session
+  setMode "ace/mode/aql" session
