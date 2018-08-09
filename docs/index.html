@@ -17,16 +17,16 @@
   <div id="editor">// Example
 schema S = literal : Ty {
   entities
-       Person
-       Company
-       CompanyPerson
-      foreign_keys
-        persons_id  : CompanyPerson -> Person
-        companies_id   : CompanyPerson -> Company
-      attributes
-        firstname lastname      : Person -> String
-        name            : Company -> String
-  }
+      Person
+      Company
+      CompanyPerson
+  foreign_keys
+      persons_id  : CompanyPerson -> Person
+      companies_id   : CompanyPerson -> Company
+  attributes
+      firstname lastname      : Person -> String
+      name            : Company -> String
+}
   </div>
   <script src="ace/ace.js"></script>
 
