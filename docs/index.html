@@ -14,19 +14,19 @@
     </style>
 </head>
 <body>
-  <div id="editor">// Schema example
+  <div id="editor">// AQL schema example
 schema S = literal : Ty {
   entities
-    Person
-    Company
-    CompanyPerson
+      Person
+      Company
+      CompanyPerson
   foreign_keys
-    persons_id   : CompanyPerson -> Person
-    companies_id : CompanyPerson -> Company
+      persons_id   : CompanyPerson -> Person
+      companies_id : CompanyPerson -> Company
   attributes
-    firstname lastname : Person  -> String
-    name               : Company -> String
- }
+      firstname lastname : Person  -> String
+      name               : Company -> String
+}
   </div>
   <script src="ace/ace.js"></script>
 
